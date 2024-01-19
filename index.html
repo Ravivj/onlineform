@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Application Form</h1>
+<form action="/submit" method="post">
+
+    <!-- Text Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <!-- Email Input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="qualification">Qualification:</label>
+    <input type="text" id="qualification" name="qualification" required><br>
+    
+    <label for="experience">Experience:</label>
+    <input type="text" id="experience" name="experience" required><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required><br> 
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone" required><br>
+    <!-- Multiple Choice -->
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label><br>
+
+    <!-- Checkbox -->
+    <label>Interests:</label><br>
+    <input type="checkbox" id="programming" name="interests[]" value="programming">
+    <label for="programming">Programming</label><br>
+    <input type="checkbox" id="design" name="interests[]" value="auto_mobiles">
+    <label for="design">Auto Mobiles</label><br>
+    <input type="checkbox" id="fashion_design" name="interests[]" value="fashion_design">
+    <label for="fashion_design">Fashion Design</label><br>
+
+
+    <!-- Textarea -->
+    <label for="comments">Declaration:</label><br>
+    <p>I certify that the information provided in this resume is true and accurate to the best of my knowledge.I hereby declare that the details furnished above are true and correct.</p><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+
+</form>
+</body>
+</html>
